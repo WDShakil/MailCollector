@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="scroll-smooth hover:scroll-auto">
+  <head>
+    <title>Email Subscription Form</title>
+
+    <script type="module" crossorigin src="./assets/app.js"></script>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body
+    class="flex items-center justify-center md:min-h-screen w-full bg-gradient-to-r from-[#f1b5c2] via-[#f1e7f4] to-[#fad4af]"
+  >
+    <div
+      class="w-11/12 lg:w-4/5 border-t-2 flex flex-col lg:flex-row items-center px-6 py-6 md:py-[100px] md:px-[50px] rounded-[20px] shadow-md backdrop-blur-lg after:content[''] after:z-[-1] z-[1] after:bg-gradient after:h-[130%] after:w-full after:absolute relative after:top-0 after:right-[-50%] overflow-hidden after:rotate-[75deg]"
+    >
+      <div class="w-full lg:w-[60%] space-y-4 order-2 lg:order-1">
+        <h2 class="font-bold text-3xl text-[#7a41a1]">Hey, Wait...</h2>
+        <h1 class="text-black text-[28px] order-4 font-bold sm:leading-9">
+          Subscribe to our Newsletter
+        </h1>
+        <div class="lg:w-4/5 w-full hidden md:block">
+          <p class="text-[18px]">
+            Stay informed about upcoming events, webinars, conferences, and
+            workshops related to technology.
+          </p>
+        </div>
+        <form
+          class="bg-white flex rounded-t-[20px] rounded-bl-[20px] rounded-br-[20px] justify-between"
+          id="subscriptionForm"
+        >
+          <input
+            class="sm:h-14 lg:h-14 h-10 px-4 w-[85%] rounded-[20px] bg-transparent focus:outline-none"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button
+            type="submit"
+            class="bg-[#7a41a1] rounded-tr-[20px] rounded-br-[20px] rounded-bl-[20px] text-base md:text-lg font-semibold text-white px-4 sm:px-11"
+          >
+            Subscribe
+          </button>
+        </form>
+        <div class="lg:w-4/5 w-full block md:hidden">
+          <p class="text-[18px]">
+            Stay informed about upcoming events, webinars, conferences, and
+            workshops related to technology.
+            <a
+              href="https://www.facebook.com/DeveloperShakilHasan"
+              class="underline"
+              >Owner</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="w-full lg:w-[40%] flex justify-end order-1 lg:order-2">
+        <img src="./assets/image.png" alt="animation image" class="w-[300px]" />
+      </div>
+    </div>
+  </body>
+</html>
